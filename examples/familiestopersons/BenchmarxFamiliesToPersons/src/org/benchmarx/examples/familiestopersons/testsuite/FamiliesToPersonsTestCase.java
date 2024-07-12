@@ -18,8 +18,7 @@ import org.benchmarx.edit.DeleteNode;
 import org.benchmarx.edit.Edit;
 import org.benchmarx.edit.IEdit;
 import org.benchmarx.edit.MoveNode;
-import org.benchmarx.examples.familiestopersons.implementations.bxtend.BXtendFamiliesToPersons;
-import org.benchmarx.examples.familiestopersons.implementations.chatgpt.GPTFamiliesToPersons;
+import org.benchmarx.examples.familiestopersons.implementations.chatgpt.DSCFamiliesToPersons;
 import org.benchmarx.examples.familiestopersons.implementations.chatgpt.GPTFamiliesToPersonsIncremental;
 import org.benchmarx.families.core.FamiliesComparator;
 import org.benchmarx.families.core.FamilyHelper;
@@ -159,7 +158,8 @@ public abstract class FamiliesToPersonsTestCase {
 //				new MediniQVTFamiliesToPersonsConfig(), //
 //				new UbtXtendFamiliesToPersons(), //
 //				new IBeXTGGFamiliesToPersons()
-				new GPTFamiliesToPersonsIncremental()
+//				new GPTFamiliesToPersonsIncremental()
+				new DSCFamiliesToPersons()
 				);
 	}
 
